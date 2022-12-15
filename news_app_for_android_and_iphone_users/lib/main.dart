@@ -53,6 +53,15 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text("News 360"),
       ),
+      body: GridView.builder(
+        itemCount: 10,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ), itemBuilder: (BuildContext context, int index) { 
+          return Container(
+            child: Text("Hello"),
+          );
+         },),
     );
   }
 }
